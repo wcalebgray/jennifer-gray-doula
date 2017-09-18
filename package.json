@@ -1,0 +1,38 @@
+{
+  "title": "Agency",
+  "name": "agency",
+  "version": "0.0.0",
+  "description": "A one-page site template forked from StartBootstrap's Agency template; Dockerized and using pug.",
+  "keywords": [
+    "html",
+    "responsive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "author": "Caleb Gray",
+  "contributors": [
+    "Caleb Gray"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcalebgray/agency.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1",
+    "jquery.easing": "^1.4.1",
+    "popper.js": "^1.11.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "3.7.0",
+    "gulp-header": "1.8.9",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "3.0.0",
+    "pug": "^2.0.0-rc.3"
+  }
+}
