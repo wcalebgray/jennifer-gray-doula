@@ -1,11 +1,12 @@
 // Styling for the contact section
 section#contact {
   background-color: $gray-darker;
-  background-image: url('../img/map-image.png');
+  background-image: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url('http://res.cloudinary.com/calebscloud/image/upload/c_crop,w_3334,x_0,y_479/v1506369675/veronika-lykova-299582_reb8rb.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   .section-heading {
-    color: white;
+    // color: white;
   }
   .form-group {
     margin-bottom: 25px;

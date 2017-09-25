@@ -1,7 +1,26 @@
 #about-doulas {
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+    #what {
+			background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg');
+    }
+    #why {
+			background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg');
+    }
+    #what, #why {
+			font-size: 72px;
+			font-weight: 700;
+			padding: 20px 40px;
+			border-radius: 0px;
+			color: $white;
+			background-size: cover;
+    }
     .btn-featured {
-        height: 300px;
-        width: 100%;
-        text-decoration: none !important;
+			height: 300px;
+			width: 100%;
+			text-decoration: none !important;
     }
 }

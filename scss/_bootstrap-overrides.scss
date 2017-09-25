@@ -17,14 +17,5 @@
   padding: 20px 40px;
   border-radius: 0px;
   @include button-variant(white, $theme-primary, $theme-primary);
-  @include heading-font;
-}
-
-.btn-featured {
-  font-size: 72px;
-  font-weight: 700;
-  padding: 20px 40px;
-  border-radius: 0px;
-  @include button-variant(white, $theme-primary, $theme-primary);
-  @include heading-font;
+  // @include heading-font;
 }

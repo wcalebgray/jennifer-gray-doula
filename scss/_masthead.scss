@@ -2,8 +2,7 @@
 header.masthead {
   text-align: center;
   color: $gray-base;
-  background: /* top, transparent red, faked with gradient */ 
-  linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url('http://res.cloudinary.com/calebscloud/image/upload/c_crop,w_3400,x_0/v1506347320/pregnant_1.jpg');
+  background: linear-gradient(rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url('http://res.cloudinary.com/calebscloud/image/upload/c_crop,w_3400,x_0/v1506347320/pregnant_1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
