@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.1.0 ()
+ * Start Bootstrap - Agency v0.2.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -171,27 +171,28 @@ header.masthead {
   top: 10px;
   font-size: 100px; }
 
-#about-doulas a:hover {
-  text-decoration: none; }
-
 #about-doulas #what {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
 
 #about-doulas #why {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg"); }
+  #about-doulas #why ul li {
+    display: inline;
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding-right: 2px; }
 
 #about-doulas #what, #about-doulas #why {
-  font-size: 72px;
-  font-weight: 700;
-  padding: 20px 40px;
+  padding: 40px;
   border-radius: 0px;
   color: #fff;
-  background-size: cover; }
-
-#about-doulas .btn-featured {
-  height: 300px;
-  width: 100%;
-  text-decoration: none !important; }
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  width: 100%; }
+  #about-doulas #what p, #about-doulas #why p {
+    text-align: left; }
 
 .team-member {
   margin-bottom: 50px;
