@@ -28,10 +28,10 @@
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+    if ($("#mainNav").offset().top > 500) {
+      $("#mainNav").addClass("navbar-shrink").css('visibility','visible');
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").removeClass("navbar-shrink").css('visibility','hidden');
     }
   });
 

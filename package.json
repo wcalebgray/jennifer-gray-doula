@@ -13,6 +13,11 @@
   "contributors": [
     "Caleb Gray"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sh bin/deploy.sh",
+    "postversion": "git push && git push --tags"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wcalebgray/agency.git"

@@ -13,12 +13,18 @@
   }
   .navbar-brand {
     color: $theme-primary;
-    @include script-font;
+    @include heading-font;
     &.active,
     &:active,
     &:focus,
     &:hover {
       color: darken($theme-primary, 10%);
+    }
+
+    .icon-footprints {
+      font-size: 23px;
+      display: inline-block;
+      padding-right: 7px;
     }
   }
   .navbar-nav {
@@ -40,19 +46,11 @@
 }
 @media(min-width:992px) {
   #mainNav {
+    visibility: hidden;
     padding-top: 25px;
     padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
-    .navbar-brand {
-      font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-    }
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -61,12 +59,17 @@
       }
     }
     &.navbar-shrink {
+      visibility: visible;
       padding-top: 0;
       padding-bottom: 0;
       background-color: $gray-darker;
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        .icon-footprints {
+          font-size: 23px;
+          padding-right: 7px;
+        }
       }
     }
   }
