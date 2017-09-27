@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.2.0 ()
+ * Start Bootstrap - Agency v0.3.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -11,9 +11,9 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #91D7E2; }
+  color: #9BBBE2; }
   a.active, a:active, a:focus, a:hover {
-    color: #69c8d7; }
+    color: #73a0d7; }
 
 h1,
 h2,
@@ -43,11 +43,11 @@ section {
     padding: 150px 0; } }
 
 ::-moz-selection {
-  background: #91D7E2;
+  background: #9BBBE2;
   text-shadow: none; }
 
 ::selection {
-  background: #91D7E2;
+  background: #9BBBE2;
   text-shadow: none; }
 
 img::selection {
@@ -57,7 +57,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #91D7E2; }
+  -webkit-tap-highlight-color: #9BBBE2; }
 
 #mainNav {
   background-color: #222222; }
@@ -68,12 +68,12 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #91D7E2;
+    background-color: #9BBBE2;
     font-family: 'Amelia Script'; }
   #mainNav .navbar-brand {
     font-family: 'Amelia Script'; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #91D7E2; }
+      color: #9BBBE2; }
     #mainNav .navbar-brand .icon-footprints {
       font-size: 23px;
       display: inline-block;
@@ -86,7 +86,7 @@ body {
     color: white;
     font-family: 'Amelia Script'; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #91D7E2; }
+      color: #9BBBE2; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -155,7 +155,7 @@ header.masthead {
       margin-bottom: 30px;
       font-family: 'Amelia Script'; }
     header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-sub-heading {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       font-size: 26px; } }
 
 .service-heading {
@@ -170,6 +170,9 @@ header.masthead {
 #services .icon-childbirth {
   top: 10px;
   font-size: 100px; }
+
+#about-doulas a:hover {
+  text-decoration: none; }
 
 #about-doulas #what {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
@@ -191,6 +194,11 @@ header.masthead {
   background-position: center;
   height: 360px;
   width: 100%; }
+  #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
+    height: 100%;
+    border: 2px solid #fff;
+    padding: 40px;
+    padding-top: 120px; }
   #about-doulas #what p, #about-doulas #why p {
     text-align: left; }
 
@@ -224,7 +232,7 @@ section#contact {
     section#contact .form-group textarea.form-control {
       height: 236px; }
   section#contact .form-control:focus {
-    border-color: #91D7E2;
+    border-color: #9BBBE2;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
@@ -278,37 +286,37 @@ ul.social-buttons {
     outline: none;
     background-color: #222222; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #91D7E2; }
+      background-color: #9BBBE2; }
 
 .text-primary {
-  color: #91D7E2 !important; }
+  color: #9BBBE2 !important; }
 
 .btn-primary {
   font-weight: 700;
   color: white;
-  border-color: #91D7E2;
-  background-color: #91D7E2;
+  border-color: #9BBBE2;
+  background-color: #9BBBE2;
   font-family: 'Amelia Script'; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: #33adc1;
-    background-color: #69c8d7; }
+    border-color: #3978c5;
+    background-color: #73a0d7; }
   .btn-primary:hover {
     color: white;
-    border-color: #61c5d5;
-    background-color: #69c8d7; }
+    border-color: #6c9bd4;
+    background-color: #73a0d7; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #61c5d5;
-    background-color: #69c8d7; }
+    border-color: #6c9bd4;
+    background-color: #73a0d7; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: #33adc1;
-      background-color: #4cbed0; }
+      border-color: #3978c5;
+      background-color: #588dcf; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -316,42 +324,44 @@ ul.social-buttons {
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary:hover {
-    border-color: #91D7E2;
-    background-color: #91D7E2; }
+    border-color: #9BBBE2;
+    background-color: #9BBBE2; }
   .btn-primary .badge {
-    color: #91D7E2;
+    color: #9BBBE2;
     background-color: white; }
 
 .btn-xl {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-left: 5px;
   margin-right: 5px;
   padding: 20px 40px;
   border-radius: 0px;
-  color: white;
-  border-color: #91D7E2;
-  background-color: #91D7E2; }
+  color: #000;
+  border-color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+  font-family: 'Amelia Script'; }
   .btn-xl.focus, .btn-xl:focus {
-    color: white;
-    border-color: #33adc1;
-    background-color: #69c8d7; }
+    color: #000;
+    border-color: black;
+    background-color: transparent; }
   .btn-xl:hover {
-    color: white;
-    border-color: #61c5d5;
-    background-color: #69c8d7; }
+    color: #000;
+    border-color: black;
+    background-color: transparent; }
   .btn-xl.active, .btn-xl:active,
   .open > .btn-xl.dropdown-toggle {
-    color: white;
-    border-color: #61c5d5;
-    background-color: #69c8d7; }
+    color: #000;
+    border-color: black;
+    background-color: transparent; }
     .btn-xl.active.focus, .btn-xl.active:focus, .btn-xl.active:hover, .btn-xl:active.focus, .btn-xl:active:focus, .btn-xl:active:hover,
     .open > .btn-xl.dropdown-toggle.focus,
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle:hover {
-      color: white;
-      border-color: #33adc1;
-      background-color: #4cbed0; }
+      color: #000;
+      border-color: black;
+      background-color: transparent; }
   .btn-xl.active, .btn-xl:active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
@@ -359,8 +369,10 @@ ul.social-buttons {
   fieldset[disabled] .btn-xl.focus,
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl:hover {
-    border-color: #91D7E2;
-    background-color: #91D7E2; }
+    border-color: #000;
+    background-color: transparent; }
   .btn-xl .badge {
-    color: #91D7E2;
-    background-color: white; }
+    color: transparent;
+    background-color: #000; }
+  .btn-xl:hover {
+    cursor: pointer; }

@@ -10,12 +10,17 @@
 }
 
 .btn-xl {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-left: 5px;
   margin-right: 5px;
   padding: 20px 40px;
   border-radius: 0px;
-  @include button-variant(white, $theme-primary, $theme-primary);
-  // @include heading-font;
+  @include button-variant($gray-base, rgba(0,0,0,0), $gray-base);
+  border: 2px solid $gray-base;
+  @include heading-font;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,4 +1,9 @@
 #about-doulas {
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
     #what {
 			background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg');
     }
@@ -23,6 +28,13 @@
 			background-position: center;
 			height: 360px;
 			width: 100%;
+
+			.about-border-wrapper {
+				height: 100%;
+				border: 2px solid $white;
+				padding: 40px;
+				padding-top: 120px;
+			}
 
 			p {
 				text-align: left;
