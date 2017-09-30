@@ -35,4 +35,19 @@
     }
   });
 
+  //about-doulas special expand and collapse
+  $('.selector').click(function() {
+    if($(this).hasClass("active")) {
+      return;
+    } else if($(this).hasClass("inactive")){
+      $(this).removeClass("inactive");
+      $(this).siblings().removeClass("active");
+    } else {
+      $(this).addClass("active");
+      $(this).siblings().addClass("inactive");
+    }
+  })
+
+  $
+
 })(jQuery); // End of use strict

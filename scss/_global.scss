@@ -72,3 +72,7 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: $theme-primary;
 }
+
+.bg-light-gray {
+  background-color: $gray-lighter;
+}

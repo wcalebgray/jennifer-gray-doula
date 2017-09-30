@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.3.0 ()
+ * Start Bootstrap - Agency v0.4.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -58,6 +58,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #9BBBE2; }
+
+.bg-light-gray {
+  background-color: #eeeeee; }
 
 #mainNav {
   background-color: #222222; }
@@ -171,36 +174,69 @@ header.masthead {
   top: 10px;
   font-size: 100px; }
 
-#about-doulas a:hover {
-  text-decoration: none; }
+#about-doulas .full-width {
+  margin-right: -15px;
+  margin-left: -15px; }
 
-#about-doulas #what {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
+#about-doulas .selector {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(50% - 20px * 2);
+  margin: 20px;
+  transition: all 0.5s; }
+  #about-doulas .selector.active {
+    width: calc(75% - 20px * 2); }
+    #about-doulas .selector.active #what, #about-doulas .selector.active #why {
+      cursor: default; }
+      #about-doulas .selector.active #what .about-border-wrapper, #about-doulas .selector.active #why .about-border-wrapper {
+        padding-top: 40px; }
+        #about-doulas .selector.active #what .about-border-wrapper > .selector-content, #about-doulas .selector.active #why .about-border-wrapper > .selector-content {
+          display: block; }
+    #about-doulas .selector.active #what {
+      height: 400px; }
+    #about-doulas .selector.active #why {
+      height: 500px; }
+  #about-doulas .selector.inactive {
+    width: calc(25% - 20px * 2); }
+    #about-doulas .selector.inactive #what .about-border-wrapper, #about-doulas .selector.inactive #why .about-border-wrapper {
+      padding-top: 107px; }
+      #about-doulas .selector.inactive #what .about-border-wrapper > h3, #about-doulas .selector.inactive #why .about-border-wrapper > h3 {
+        display: none; }
+      #about-doulas .selector.inactive #what .about-border-wrapper > i, #about-doulas .selector.inactive #why .about-border-wrapper > i {
+        display: block;
+        font-size: 48px; }
+    #about-doulas .selector.inactive #what {
+      height: 500px; }
+    #about-doulas .selector.inactive #why {
+      height: 400px; }
 
 #about-doulas #why {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
+
+#about-doulas #what {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg"); }
-  #about-doulas #why ul li {
-    display: inline;
-    text-align: left;
-    float: left;
-    width: 50%;
-    padding-right: 2px; }
 
 #about-doulas #what, #about-doulas #why {
+  cursor: pointer;
   padding: 40px;
   border-radius: 0px;
   color: #fff;
   background-size: cover;
   background-position: center;
-  height: 360px;
-  width: 100%; }
+  height: 360px; }
   #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
     height: 100%;
     border: 2px solid #fff;
     padding: 40px;
     padding-top: 120px; }
-  #about-doulas #what p, #about-doulas #why p {
-    text-align: left; }
+    #about-doulas #what .about-border-wrapper > h3, #about-doulas #why .about-border-wrapper > h3 {
+      display: block; }
+    #about-doulas #what .about-border-wrapper > i,
+    #about-doulas #what .about-border-wrapper .selector-content, #about-doulas #why .about-border-wrapper > i,
+    #about-doulas #why .about-border-wrapper .selector-content {
+      display: none; }
+    #about-doulas #what .about-border-wrapper .selector-content ul, #about-doulas #why .about-border-wrapper .selector-content ul {
+      text-align: left; }
 
 .team-member {
   margin-bottom: 50px;
@@ -236,21 +272,21 @@ section#contact {
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
-    color: #eeeeee;
+    color: #777777;
     font-family: 'Amelia Script'; }
   section#contact :-moz-placeholder {
     font-weight: 700;
-    color: #eeeeee;
+    color: #777777;
     /* Firefox 18- */
     font-family: 'Amelia Script'; }
   section#contact ::-moz-placeholder {
     font-weight: 700;
-    color: #eeeeee;
+    color: #777777;
     /* Firefox 19+ */
     font-family: 'Amelia Script'; }
   section#contact :-ms-input-placeholder {
     font-weight: 700;
-    color: #eeeeee;
+    color: #777777;
     font-family: 'Amelia Script'; }
   section#contact .text-danger {
     color: #e74c3c; }
@@ -261,14 +297,12 @@ footer {
   footer span.copyright {
     font-size: 90%;
     line-height: 40px;
-    text-transform: none;
-    font-family: 'Amelia Script'; }
+    text-transform: none; }
   footer ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
     margin-bottom: 0;
-    text-transform: none;
-    font-family: 'Amelia Script'; }
+    text-transform: none; }
 
 ul.social-buttons {
   margin-bottom: 0; }
