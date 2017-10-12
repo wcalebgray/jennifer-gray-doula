@@ -1,7 +1,7 @@
 #about-doulas {
 	//local variables
 	$margin-width: 20px;
-	$what-active-height: 400px;
+	$what-active-height: 424px;
 	$why-active-height: 500px;
 
 	.full-width {
@@ -10,59 +10,84 @@
 	}
 
 	.selector {
-		$margin-width: 20px;
-		vertical-align: top;
-		display: inline-block;
-		width: calc(50% - #{$margin-width} * 2);
+		display: block;
+		width: 100%;
     margin: $margin-width;
 		transition: all 0.5s;
 
+		@media(min-width: 992px){
+			vertical-align: top;
+			display: inline-block;
+			width: calc(50% - #{$margin-width} * 2);
+		}
+
 		&.active {
-			width: calc(75% - #{$margin-width} * 2);
+			@media(min-width: 992px){
+				width: calc(75% - #{$margin-width} * 2);
+			}
 
 			#what, #why {
 				cursor: default;
 				.about-border-wrapper {
 					padding-top: 40px;
 
-					> .selector-content {
+					> h3,
+					.selector-content {
 						display: block;
 					}
 				}
 			}
 
 			#what {
-				height: $what-active-height;
+				@media(min-width: 992px){
+					height: $what-active-height;
+				}
 			}
 
 			#why {
-				height: $why-active-height;
+				@media(min-width: 992px){
+					height: $why-active-height;
+				}
 			}
 		}
 
 		&.inactive {
-			width: calc(25% - #{$margin-width} * 2);
-
+			@media(min-width: 992px){
+				width: calc(25% - #{$margin-width} * 2);
+			}
+			
 			#what, #why {
 				.about-border-wrapper {
-					padding-top: 107px;
+					display: table;
+					padding-top: 40px;
 					> h3 {
-						display: none;
+						display: block;
+						@media(min-width: 992px){
+							display: none;
+						}
 					}
 
 					> i {
-						display: block;
-						font-size: 48px;
+						display: none;
+						@media(min-width: 992px){
+							display: table-cell;
+							vertical-align: middle;
+							font-size: 48px;
+						}
 					}
 				}
 			}
 
 			#what {
-				height: $why-active-height;
+				@media(min-width: 992px){
+					height: $why-active-height;
+				}
 			}
 
 			#why {
-				height: $what-active-height;
+				@media(min-width: 992px) {
+					height: $what-active-height;
+				}
 			}
 		}
 	}	
@@ -75,27 +100,48 @@
 	}
 
 	#what, #why {
+		transition: height 0.5s;
 		cursor: pointer;
 		padding: 40px;
 		border-radius: 0px;
 		color: $white;
 		background-size: cover;
 		background-position: center;
-		height: 360px;
+		height: auto;
+
+		@media(min-width: 992px){
+			height: 360px;
+		}
 
 		.about-border-wrapper {
 			height: 100%;
+			width: 100%;
 			border: 2px solid $white;
 			padding: 40px;
-			padding-top: 120px;
+
+			@media(min-width: 992px){
+				display: table;
+			}
 
 			> h3 {
 				display: block;
+				line-height: 3.25rem;
+				@media(min-width: 992px){
+					display: table-cell;
+					vertical-align: middle;
+				}
 			}
 
-			> i,
-			.selector-content {
+			> i {
 				display: none;
+			}
+
+			.selector-content {
+				transition: all 0.5s;
+				display: block;
+				@media(min-width: 992px){
+					display: none;
+				}
 			}
 
 			.selector-content {

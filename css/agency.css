@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.4.0 ()
+ * Start Bootstrap - Agency v0.5.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -179,36 +179,56 @@ header.masthead {
   margin-left: -15px; }
 
 #about-doulas .selector {
-  vertical-align: top;
-  display: inline-block;
-  width: calc(50% - 20px * 2);
+  display: block;
+  width: 100%;
   margin: 20px;
   transition: all 0.5s; }
-  #about-doulas .selector.active {
-    width: calc(75% - 20px * 2); }
-    #about-doulas .selector.active #what, #about-doulas .selector.active #why {
-      cursor: default; }
-      #about-doulas .selector.active #what .about-border-wrapper, #about-doulas .selector.active #why .about-border-wrapper {
-        padding-top: 40px; }
-        #about-doulas .selector.active #what .about-border-wrapper > .selector-content, #about-doulas .selector.active #why .about-border-wrapper > .selector-content {
-          display: block; }
+  @media (min-width: 992px) {
+    #about-doulas .selector {
+      vertical-align: top;
+      display: inline-block;
+      width: calc(50% - 20px * 2); } }
+  @media (min-width: 992px) {
+    #about-doulas .selector.active {
+      width: calc(75% - 20px * 2); } }
+  #about-doulas .selector.active #what, #about-doulas .selector.active #why {
+    cursor: default; }
+    #about-doulas .selector.active #what .about-border-wrapper, #about-doulas .selector.active #why .about-border-wrapper {
+      padding-top: 40px; }
+      #about-doulas .selector.active #what .about-border-wrapper > h3,
+      #about-doulas .selector.active #what .about-border-wrapper .selector-content, #about-doulas .selector.active #why .about-border-wrapper > h3,
+      #about-doulas .selector.active #why .about-border-wrapper .selector-content {
+        display: block; }
+  @media (min-width: 992px) {
     #about-doulas .selector.active #what {
-      height: 400px; }
+      height: 424px; } }
+  @media (min-width: 992px) {
     #about-doulas .selector.active #why {
-      height: 500px; }
-  #about-doulas .selector.inactive {
-    width: calc(25% - 20px * 2); }
-    #about-doulas .selector.inactive #what .about-border-wrapper, #about-doulas .selector.inactive #why .about-border-wrapper {
-      padding-top: 107px; }
-      #about-doulas .selector.inactive #what .about-border-wrapper > h3, #about-doulas .selector.inactive #why .about-border-wrapper > h3 {
-        display: none; }
-      #about-doulas .selector.inactive #what .about-border-wrapper > i, #about-doulas .selector.inactive #why .about-border-wrapper > i {
-        display: block;
-        font-size: 48px; }
+      height: 500px; } }
+  @media (min-width: 992px) {
+    #about-doulas .selector.inactive {
+      width: calc(25% - 20px * 2); } }
+  #about-doulas .selector.inactive #what .about-border-wrapper, #about-doulas .selector.inactive #why .about-border-wrapper {
+    display: table;
+    padding-top: 40px; }
+    #about-doulas .selector.inactive #what .about-border-wrapper > h3, #about-doulas .selector.inactive #why .about-border-wrapper > h3 {
+      display: block; }
+      @media (min-width: 992px) {
+        #about-doulas .selector.inactive #what .about-border-wrapper > h3, #about-doulas .selector.inactive #why .about-border-wrapper > h3 {
+          display: none; } }
+    #about-doulas .selector.inactive #what .about-border-wrapper > i, #about-doulas .selector.inactive #why .about-border-wrapper > i {
+      display: none; }
+      @media (min-width: 992px) {
+        #about-doulas .selector.inactive #what .about-border-wrapper > i, #about-doulas .selector.inactive #why .about-border-wrapper > i {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 48px; } }
+  @media (min-width: 992px) {
     #about-doulas .selector.inactive #what {
-      height: 500px; }
+      height: 500px; } }
+  @media (min-width: 992px) {
     #about-doulas .selector.inactive #why {
-      height: 400px; }
+      height: 424px; } }
 
 #about-doulas #why {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
@@ -217,24 +237,40 @@ header.masthead {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg"); }
 
 #about-doulas #what, #about-doulas #why {
+  transition: height 0.5s;
   cursor: pointer;
   padding: 40px;
   border-radius: 0px;
   color: #fff;
   background-size: cover;
   background-position: center;
-  height: 360px; }
+  height: auto; }
+  @media (min-width: 992px) {
+    #about-doulas #what, #about-doulas #why {
+      height: 360px; } }
   #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
     height: 100%;
+    width: 100%;
     border: 2px solid #fff;
-    padding: 40px;
-    padding-top: 120px; }
+    padding: 40px; }
+    @media (min-width: 992px) {
+      #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
+        display: table; } }
     #about-doulas #what .about-border-wrapper > h3, #about-doulas #why .about-border-wrapper > h3 {
-      display: block; }
-    #about-doulas #what .about-border-wrapper > i,
-    #about-doulas #what .about-border-wrapper .selector-content, #about-doulas #why .about-border-wrapper > i,
-    #about-doulas #why .about-border-wrapper .selector-content {
+      display: block;
+      line-height: 3.25rem; }
+      @media (min-width: 992px) {
+        #about-doulas #what .about-border-wrapper > h3, #about-doulas #why .about-border-wrapper > h3 {
+          display: table-cell;
+          vertical-align: middle; } }
+    #about-doulas #what .about-border-wrapper > i, #about-doulas #why .about-border-wrapper > i {
       display: none; }
+    #about-doulas #what .about-border-wrapper .selector-content, #about-doulas #why .about-border-wrapper .selector-content {
+      transition: all 0.5s;
+      display: block; }
+      @media (min-width: 992px) {
+        #about-doulas #what .about-border-wrapper .selector-content, #about-doulas #why .about-border-wrapper .selector-content {
+          display: none; } }
     #about-doulas #what .about-border-wrapper .selector-content ul, #about-doulas #why .about-border-wrapper .selector-content ul {
       text-align: left; }
 
