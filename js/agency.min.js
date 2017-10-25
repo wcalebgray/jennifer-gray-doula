@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.5.0 ()
+ * Start Bootstrap - Agency v0.6.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
