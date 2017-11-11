@@ -24,3 +24,15 @@
     cursor: pointer;
   }
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+
+.hidden-xs {
+  @media(max-width: 575px){
+    display: none;
+  }
+}

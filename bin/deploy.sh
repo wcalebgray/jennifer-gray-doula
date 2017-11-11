@@ -62,8 +62,8 @@ docker push "$image"
 echo
 echo "Updating task: $TASK"
 
-# pull current task definition and replace the image(s)
 current_def=`aws ecs describe-task-definition --task-def "$TASK"`
+# pull current task definition and replace the image(s)
 current_containers=`node -pe "JSON.stringify(JSON.parse(process.argv[1]).taskDefinition.containerDefinitions)" "$current_def"`
 new_containers=`echo "$current_containers" | sed "s~$REPO:[A-Za-z0-9._-]*~$image~g"`
 

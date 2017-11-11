@@ -12,10 +12,11 @@
 	.selector {
 		display: block;
 		width: 100%;
-    margin: $margin-width;
+    padding: 20px;
 		transition: all 0.5s;
 
 		@media(min-width: 992px){
+			margin: $margin-width;
 			vertical-align: top;
 			display: inline-block;
 			width: calc(50% - #{$margin-width} * 2);
@@ -93,7 +94,7 @@
 	}	
 
 	#why {
-		background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg');
+		background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1510193978/birth_edit_5_tlu2jk.jpg');
 	}
 	#what {
 		background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg');
@@ -102,7 +103,7 @@
 	#what, #why {
 		transition: height 0.5s;
 		cursor: pointer;
-		padding: 40px;
+		padding: 15px;
 		border-radius: 0px;
 		color: $white;
 		background-size: cover;
@@ -111,15 +112,17 @@
 
 		@media(min-width: 992px){
 			height: 360px;
+			padding: 40px;
 		}
 
 		.about-border-wrapper {
 			height: 100%;
 			width: 100%;
 			border: 2px solid $white;
-			padding: 40px;
+			padding: 15px;
 
 			@media(min-width: 992px){
+				padding: 40px;
 				display: table;
 			}
 

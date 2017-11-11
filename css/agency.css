@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.6.0 ()
+ * Start Bootstrap - Agency v0.7.0 ()
  * Copyright 2013-2017 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -25,16 +25,16 @@ h6 {
   font-family: 'Amelia Script'; }
 
 section {
-  padding: 100px 0; }
+  padding: 60px 0; }
   section h2.section-heading {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px; }
   section h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
@@ -115,7 +115,7 @@ body {
 header.masthead {
   text-align: center;
   color: #000;
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/c_crop,w_3400,x_0/v1506347320/pregnant_1.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("https://media.istockphoto.com/photos/happy-mother-and-baby-playing-at-home-in-bedroom-cozy-family-in-picture-id675760466?s=2048x2048");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -130,19 +130,20 @@ header.masthead {
       padding: 15px; }
       header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper {
         border: solid #000 2px;
-        padding-top: 100px;
-        padding-bottom: 100px; }
+        padding-top: 30px;
+        padding-bottom: 20px; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .icon-footprints {
-          font-size: 60px; }
+          font-size: 40px; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-heading {
-          font-size: 50px;
+          font-size: 32px;
           font-weight: 700;
           line-height: 50px;
-          margin-bottom: 25px;
+          margin-bottom: 10px;
           font-family: 'Amelia Script'; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-sub-heading {
-          font-size: 20px;
-          font-weight: bold; }
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 20px; }
 
 @media (min-width: 768px) {
   header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper {
@@ -163,7 +164,8 @@ header.masthead {
 
 .service-heading {
   margin: 15px 0;
-  text-transform: none; }
+  text-transform: none;
+  line-height: 1.5em; }
 
 #services .icon-prenatal {
   font-size: 75px;
@@ -181,10 +183,11 @@ header.masthead {
 #about-doulas .selector {
   display: block;
   width: 100%;
-  margin: 20px;
+  padding: 20px;
   transition: all 0.5s; }
   @media (min-width: 992px) {
     #about-doulas .selector {
+      margin: 20px;
       vertical-align: top;
       display: inline-block;
       width: calc(50% - 20px * 2); } }
@@ -231,7 +234,7 @@ header.masthead {
       height: 424px; } }
 
 #about-doulas #why {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371325/eric-froehling-71131_d1boha.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1510193978/birth_edit_5_tlu2jk.jpg"); }
 
 #about-doulas #what {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg"); }
@@ -239,7 +242,7 @@ header.masthead {
 #about-doulas #what, #about-doulas #why {
   transition: height 0.5s;
   cursor: pointer;
-  padding: 40px;
+  padding: 15px;
   border-radius: 0px;
   color: #fff;
   background-size: cover;
@@ -247,14 +250,16 @@ header.masthead {
   height: auto; }
   @media (min-width: 992px) {
     #about-doulas #what, #about-doulas #why {
-      height: 360px; } }
+      height: 360px;
+      padding: 40px; } }
   #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
     height: 100%;
     width: 100%;
     border: 2px solid #fff;
-    padding: 40px; }
+    padding: 15px; }
     @media (min-width: 992px) {
       #about-doulas #what .about-border-wrapper, #about-doulas #why .about-border-wrapper {
+        padding: 40px;
         display: table; } }
     #about-doulas #what .about-border-wrapper > h3, #about-doulas #why .about-border-wrapper > h3 {
       display: block;
@@ -446,3 +451,12 @@ ul.social-buttons {
     background-color: #000; }
   .btn-xl:hover {
     cursor: pointer; }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+@media (max-width: 575px) {
+  .hidden-xs {
+    display: none; } }
