@@ -8,6 +8,11 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
+      var hiddenInput = $("input#address").val();
+      // if the hidden input is filled in, it means spam, so don't send request.
+      if(hiddenInput) {
+        throw new Error('Sorry, your request could not be completed');
+      }
       var name = $("input#name").val();
       var email = $("input#email").val();
       var phone = $("input#phone").val();
@@ -20,7 +25,7 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: "http://jennifergraydoula.com:3000",
         type: "POST",
         data: {
           name: name,
