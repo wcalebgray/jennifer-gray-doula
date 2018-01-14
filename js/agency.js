@@ -26,28 +26,4 @@
     offset: 54
   });
 
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(function() {
-    if ($("#mainNav").offset().top > 500) {
-      $("#mainNav").addClass("navbar-shrink").css('visibility','visible');
-    } else {
-      $("#mainNav").removeClass("navbar-shrink").css('visibility','hidden');
-    }
-  });
-
-  //about-doulas special expand and collapse
-  $('.selector').click(function() {
-    if($(this).hasClass("active")) {
-      return;
-    } else if($(this).hasClass("inactive")){
-      $(this).removeClass("inactive");
-      $(this).siblings().removeClass("active");
-    } else {
-      $(this).addClass("active");
-      $(this).siblings().addClass("inactive");
-    }
-  })
-
-  $
-
 })(jQuery); // End of use strict

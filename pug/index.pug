@@ -13,6 +13,7 @@ html(lang='en')
     // Custom fonts for this template
     link(rel="stylesheet" href="/font/font.css" type="text/css" charset="utf-8") 
     link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet")
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
@@ -29,9 +30,10 @@ html(lang='en')
   body#page-top
     include ./nav.pug
     include ./header.pug
-    include ./start-here.pug
-    include ./services.pug
+    //- include ./start-here.pug
     include ./about-doulas.pug
+    include ./benefits.pug
+    include ./services.pug
     //- include ./portfolio.pug
     //- include ./about.pug
     include ./about-me.pug

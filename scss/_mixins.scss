@@ -66,8 +66,10 @@
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 @mixin body-font {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 @mixin heading-font {
-  font-family: 'Amelia Script';
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

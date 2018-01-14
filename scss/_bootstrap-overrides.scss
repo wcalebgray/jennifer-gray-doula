@@ -16,8 +16,8 @@
   margin-right: 5px;
   padding: 20px 40px;
   border-radius: 0px;
-  @include button-variant($gray-base, rgba(0,0,0,0), $gray-base);
-  border: 2px solid $gray-base;
+  @include button-variant($gray-dark, rgba(0,0,0,0), $gray-dark);
+  border: 2px solid $gray-dark;
   @include heading-font;
 
   &:hover {

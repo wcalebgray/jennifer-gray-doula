@@ -14,16 +14,19 @@ section#contact {
     textarea {
       padding: 20px;
     }
-    input.form-control {
+    .form-control {
+      border-radius: 0;
+      border: 0px;
       height: auto;
+
+      &:focus {
+        border-color: $theme-primary;
+        box-shadow: none;
+      }
     }
     textarea.form-control {
-      height: 236px;
+      height: 230px;
     }
-  }
-  .form-control:focus {
-    border-color: $theme-primary;
-    box-shadow: none;
   }
   ::-webkit-input-placeholder {
     font-weight: 700;

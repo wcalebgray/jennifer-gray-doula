@@ -9,149 +9,155 @@
 		margin-left: -15px;
 	}
 
-	.selector {
-		display: block;
-		width: 100%;
-    padding: 20px;
-		transition: all 0.5s;
+	.new-question {
+		margin-top: 50px;
+	}
 
-		@media(min-width: 992px){
-			margin: $margin-width;
-			vertical-align: top;
-			display: inline-block;
-			width: calc(50% - #{$margin-width} * 2);
-		}
 
-		&.active {
-			@media(min-width: 992px){
-				width: calc(75% - #{$margin-width} * 2);
-			}
 
-			#what, #why {
-				cursor: default;
-				.about-border-wrapper {
-					padding-top: 40px;
+	// .selector {
+	// 	display: block;
+	// 	width: 100%;
+  //   padding: 20px;
+	// 	transition: all 0.5s;
 
-					> h3,
-					.selector-content {
-						display: block;
-					}
-				}
-			}
+	// 	@media(min-width: 992px){
+	// 		margin: $margin-width;
+	// 		vertical-align: top;
+	// 		display: inline-block;
+	// 		width: calc(50% - #{$margin-width} * 2);
+	// 	}
 
-			#what {
-				@media(min-width: 992px){
-					height: $what-active-height;
-				}
-			}
+	// 	&.active {
+	// 		@media(min-width: 992px){
+	// 			width: calc(75% - #{$margin-width} * 2);
+	// 		}
 
-			#why {
-				@media(min-width: 992px){
-					height: $why-active-height;
-				}
-			}
-		}
+	// 		#what, #why {
+	// 			cursor: default;
+	// 			.about-border-wrapper {
+	// 				padding-top: 40px;
 
-		&.inactive {
-			@media(min-width: 992px){
-				width: calc(25% - #{$margin-width} * 2);
-			}
+	// 				> h3,
+	// 				.selector-content {
+	// 					display: block;
+	// 				}
+	// 			}
+	// 		}
+
+	// 		#what {
+	// 			@media(min-width: 992px){
+	// 				height: $what-active-height;
+	// 			}
+	// 		}
+
+	// 		#why {
+	// 			@media(min-width: 992px){
+	// 				height: $why-active-height;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	&.inactive {
+	// 		@media(min-width: 992px){
+	// 			width: calc(25% - #{$margin-width} * 2);
+	// 		}
 			
-			#what, #why {
-				.about-border-wrapper {
-					display: table;
-					padding-top: 40px;
-					> h3 {
-						display: block;
-						@media(min-width: 992px){
-							display: none;
-						}
-					}
+	// 		#what, #why {
+	// 			.about-border-wrapper {
+	// 				display: table;
+	// 				padding-top: 40px;
+	// 				> h3 {
+	// 					display: block;
+	// 					@media(min-width: 992px){
+	// 						display: none;
+	// 					}
+	// 				}
 
-					> i {
-						display: none;
-						@media(min-width: 992px){
-							display: table-cell;
-							vertical-align: middle;
-							font-size: 48px;
-						}
-					}
-				}
-			}
+	// 				> i {
+	// 					display: none;
+	// 					@media(min-width: 992px){
+	// 						display: table-cell;
+	// 						vertical-align: middle;
+	// 						font-size: 48px;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
 
-			#what {
-				@media(min-width: 992px){
-					height: $why-active-height;
-				}
-			}
+	// 		#what {
+	// 			@media(min-width: 992px){
+	// 				height: $why-active-height;
+	// 			}
+	// 		}
 
-			#why {
-				@media(min-width: 992px) {
-					height: $what-active-height;
-				}
-			}
-		}
-	}	
+	// 		#why {
+	// 			@media(min-width: 992px) {
+	// 				height: $what-active-height;
+	// 			}
+	// 		}
+	// 	}
+	// }	
 
-	#why {
-		background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1510193978/birth_edit_5_tlu2jk.jpg');
-	}
-	#what {
-		background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg');
-	}
+	// #why {
+	// 	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1510193978/birth_edit_5_tlu2jk.jpg');
+	// }
+	// #what {
+	// 	background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('http://res.cloudinary.com/calebscloud/image/upload/v1506371329/kelly-sikkema-325963_nqt8qd.jpg');
+	// }
 
-	#what, #why {
-		transition: height 0.5s;
-		cursor: pointer;
-		padding: 15px;
-		border-radius: 0px;
-		color: $white;
-		background-size: cover;
-		background-position: center;
-		height: auto;
+	// #what, #why {
+	// 	transition: height 0.5s;
+	// 	cursor: pointer;
+	// 	padding: 15px;
+	// 	border-radius: 0px;
+	// 	color: $white;
+	// 	background-size: cover;
+	// 	background-position: center;
+	// 	height: auto;
 
-		@media(min-width: 992px){
-			height: 360px;
-			padding: 40px;
-		}
+	// 	@media(min-width: 992px){
+	// 		height: 360px;
+	// 		padding: 40px;
+	// 	}
 
-		.about-border-wrapper {
-			height: 100%;
-			width: 100%;
-			border: 2px solid $white;
-			padding: 15px;
+	// 	.about-border-wrapper {
+	// 		height: 100%;
+	// 		width: 100%;
+	// 		border: 2px solid $white;
+	// 		padding: 15px;
 
-			@media(min-width: 992px){
-				padding: 40px;
-				display: table;
-			}
+	// 		@media(min-width: 992px){
+	// 			padding: 40px;
+	// 			display: table;
+	// 		}
 
-			> h3 {
-				display: block;
-				line-height: 3.25rem;
-				@media(min-width: 992px){
-					display: table-cell;
-					vertical-align: middle;
-				}
-			}
+	// 		> h3 {
+	// 			display: block;
+	// 			line-height: 3.25rem;
+	// 			@media(min-width: 992px){
+	// 				display: table-cell;
+	// 				vertical-align: middle;
+	// 			}
+	// 		}
 
-			> i {
-				display: none;
-			}
+	// 		> i {
+	// 			display: none;
+	// 		}
 
-			.selector-content {
-				transition: all 0.5s;
-				display: block;
-				@media(min-width: 992px){
-					display: none;
-				}
-			}
+	// 		.selector-content {
+	// 			transition: all 0.5s;
+	// 			display: block;
+	// 			@media(min-width: 992px){
+	// 				display: none;
+	// 			}
+	// 		}
 
-			.selector-content {
-				ul {
-					text-align: left;
-				}
-			}
-		}
-	}
+	// 		.selector-content {
+	// 			ul {
+	// 				text-align: left;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
