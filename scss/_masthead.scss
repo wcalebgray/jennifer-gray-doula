@@ -3,11 +3,16 @@ header.masthead {
   text-align: center;
   color: $gray-dark;
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),
-  url('https://media.istockphoto.com/photos/happy-mother-and-baby-playing-at-home-in-bedroom-cozy-family-in-picture-id675760466');
+  url('http://res.cloudinary.com/calebscloud/image/upload/v1515968607/background-doula-site_zufung.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+
+  .wrapper-left {
+    width: 50%
+
+  }
   .header-wrapper {
     padding: 30px;
     .thick-border-wrapper {
@@ -29,7 +34,7 @@ header.masthead {
           @include heading-font;
         }
         .intro-sub-heading {
-          // color: $gray-slightly-lighter;
+          color: $gray-light;
           margin-bottom: 20px;
         }
       }

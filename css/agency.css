@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.9.0 ()
+ * Start Bootstrap - Agency v0.10.0 ()
  * Copyright 2013-2018 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -136,7 +136,7 @@ body {
 header.masthead {
   text-align: center;
   color: #333333;
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("https://media.istockphoto.com/photos/happy-mother-and-baby-playing-at-home-in-bedroom-cozy-family-in-picture-id675760466");
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/v1515968607/background-doula-site_zufung.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -144,6 +144,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  header.masthead .wrapper-left {
+    width: 50%; }
   header.masthead .header-wrapper {
     padding: 30px; }
     header.masthead .header-wrapper .thick-border-wrapper {
@@ -165,6 +167,7 @@ header.masthead {
           letter-spacing: 0.1em;
           text-transform: uppercase; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-sub-heading {
+          color: #777777;
           margin-bottom: 20px; }
 
 @media (min-width: 768px) {
@@ -1488,3 +1491,6 @@ ul.social-buttons {
 @media (max-width: 575px) {
   .hidden-xs {
     display: none; } }
+
+.text-muted {
+  color: #777777; }
