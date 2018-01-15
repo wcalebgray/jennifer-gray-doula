@@ -267,7 +267,9 @@
 }
 
 .c100.big {
-  font-size: 240px;
+  @media(min-width: 992px){
+    font-size: 240px;
+  }
 }
 
 .c100.small {

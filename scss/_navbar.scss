@@ -71,11 +71,15 @@
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        margin-left: 16px;
         .icon-footprints {
           font-size: 23px;
           padding-right: 7px;
         }
       }
+    }
+    .navbar-brand {
+      margin-left: 16px;
     }
   }
 }

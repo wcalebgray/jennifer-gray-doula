@@ -3,7 +3,7 @@ header.masthead {
   text-align: center;
   color: $gray-dark;
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),
-  url('http://res.cloudinary.com/calebscloud/image/upload/v1515968607/background-doula-site_zufung.jpg');
+  url('http://res.cloudinary.com/calebscloud/image/upload/v1515977183/iStock-675760466_bwkdhl.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -23,13 +23,13 @@ header.masthead {
         padding-top: 30px;
         padding-bottom: 20px;
         .icon-footprints {
-          font-size: 60px;
+          font-size: 40px;
         }
         .intro-heading,
         .intro-sub-heading {
-          font-size: 32px;
+          font-size: 24px;
           font-weight: 300;
-          line-height: 36px;
+          line-height: 28px;
           margin-bottom: 0px;
           @include heading-font;
         }
@@ -50,7 +50,7 @@ header.masthead {
           padding-bottom: 100px;
           .icon-footprints {
             padding-bottom: 20px;
-            font-size: 100px;
+            font-size: 80px;
           }
           .intro-heading,
           .intro-sub-heading {

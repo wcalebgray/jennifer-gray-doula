@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agency v0.10.0 ()
+ * Start Bootstrap - Agency v0.11.0 ()
  * Copyright 2013-2018 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
@@ -128,15 +128,18 @@ body {
       background-color: #333333; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
-        padding: 12px 0; }
+        padding: 12px 0;
+        margin-left: 16px; }
         #mainNav.navbar-shrink .navbar-brand .icon-footprints {
           font-size: 23px;
-          padding-right: 7px; } }
+          padding-right: 7px; }
+    #mainNav .navbar-brand {
+      margin-left: 16px; } }
 
 header.masthead {
   text-align: center;
   color: #333333;
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/v1515968607/background-doula-site_zufung.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("http://res.cloudinary.com/calebscloud/image/upload/v1515977183/iStock-675760466_bwkdhl.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -156,12 +159,12 @@ header.masthead {
         padding-top: 30px;
         padding-bottom: 20px; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .icon-footprints {
-          font-size: 60px; }
+          font-size: 40px; }
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-heading,
         header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-sub-heading {
-          font-size: 32px;
+          font-size: 24px;
           font-weight: 300;
-          line-height: 36px;
+          line-height: 28px;
           margin-bottom: 0px;
           font-family: 'Open Sans', sans-serif;
           letter-spacing: 0.1em;
@@ -176,7 +179,7 @@ header.masthead {
     padding-bottom: 100px; }
     header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .icon-footprints {
       padding-bottom: 20px;
-      font-size: 100px; }
+      font-size: 80px; }
     header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-heading,
     header.masthead .header-wrapper .thick-border-wrapper .thin-border-wrapper .intro-sub-heading {
       font-size: 50px;
@@ -566,8 +569,9 @@ ul.social-buttons {
   float: none;
   margin: 0 auto; }
 
-.c100.big {
-  font-size: 240px; }
+@media (min-width: 992px) {
+  .c100.big {
+    font-size: 240px; } }
 
 .c100.small {
   font-size: 80px; }
@@ -1482,6 +1486,9 @@ ul.social-buttons {
     background-color: #333333; }
   .btn-xl:hover {
     cursor: pointer; }
+
+.col-xs-6 {
+  width: 50%; }
 
 .img-responsive {
   max-width: 100%;
