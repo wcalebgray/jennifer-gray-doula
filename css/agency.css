@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Agency v0.11.0 ()
- * Copyright 2013-2018 Caleb Gray
+ * Start Bootstrap - Agency v1.0.0 ()
+ * Copyright 2013-2019 Caleb Gray
  * Licensed under MIT (https://github.com/BlackrockDigital/agency/blob/master/LICENSE)
  */
 body {
@@ -1447,7 +1447,7 @@ ul.social-buttons {
   border-radius: 0px;
   color: #333333;
   border-color: #333333;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   border: 2px solid #333333;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
@@ -1455,23 +1455,23 @@ ul.social-buttons {
   .btn-xl.focus, .btn-xl:focus {
     color: #333333;
     border-color: black;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .btn-xl:hover {
     color: #333333;
     border-color: #141414;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .btn-xl.active, .btn-xl:active,
   .open > .btn-xl.dropdown-toggle {
     color: #333333;
     border-color: #141414;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
     .btn-xl.active.focus, .btn-xl.active:focus, .btn-xl.active:hover, .btn-xl:active.focus, .btn-xl:active:focus, .btn-xl:active:hover,
     .open > .btn-xl.dropdown-toggle.focus,
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle:hover {
       color: #333333;
       border-color: black;
-      background-color: transparent; }
+      background-color: rgba(0, 0, 0, 0); }
   .btn-xl.active, .btn-xl:active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
@@ -1480,9 +1480,9 @@ ul.social-buttons {
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl:hover {
     border-color: #333333;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .btn-xl .badge {
-    color: transparent;
+    color: rgba(0, 0, 0, 0);
     background-color: #333333; }
   .btn-xl:hover {
     cursor: pointer; }
