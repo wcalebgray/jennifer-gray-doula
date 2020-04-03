@@ -3,7 +3,7 @@
 To get started you need to:
 - install Python (in Windows, 3.6) 
 - install AWS CLI
-- congifure AWS CLI
+- configure AWS CLI
 
 Run this command to log into AWS:
 ```$(aws ecr get-login --no-include-email --region us-west-2)```
